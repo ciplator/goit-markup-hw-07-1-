@@ -22,10 +22,14 @@
     <header class="page-header">
       <div class="container header-position">
         <nav class="page-navigation nav-position">
+          <div class="mobile-header">
           <a class="logo-web link logo-position" href="./index.html"
             >WEB<span class="logo_studio">Studio</span>
           </a>
-
+<button type="button" class="mobile-menu-open-btn js-open-menu"><svg class="mobule-menu-open-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm-menu-hamburger"></use>
+          </svg></button></div>
+          <div class="nav-menu">
           <ul class="navigation_list list menu-position">
             <li class="menu-item">
               <a class="menu-link menu-link-activity link" href="./index.html"
@@ -42,8 +46,55 @@
             </li>
           </ul>
         </nav>
-        <address class="header-addres adress-main">
+        <address class="header-addres adress-main nav-menu" >
           <ul class="header-addres-list list addres-position">
+            <li>
+              <a
+                class="header-addres-cont link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="number">
+              <a class="header-addres-cont numder link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address></div>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn js-close-menu">
+          <svg
+            class="modal-icon"
+            aria-label="icon close"
+            width="8"
+            height="8">
+            <use
+              class="modal-icon-svg"
+              href="./images/icons.svg#modal-close-icon"
+            ></use>
+          </svg>
+        
+          </button>
+          <ul>
+           <ul class="navigation_list list menu-position">
+            <li class="menu-item">
+              <a class="menu-link menu-link-activity link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+
+            <li class="menu-item">
+              <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+
+            <li class="menu-item">
+              <a class="menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+          <ul class="header-addres-list list">
             <li>
               <a
                 class="header-addres-cont link"
@@ -57,7 +108,8 @@
               >
             </li>
           </ul>
-        </address>
+       
+        </div>
       </div>
     </header>
     <main>
@@ -188,8 +240,8 @@
                 height="260"
               />
               <div class="card-description">
-                <h3 class="head-text team-name">Mark Guerrero</h3>
-                <p class="paragraph-text job-place">Product Designer</p>
+                <h3 class="head-text-taem team-name">Mark Guerrero</h3>
+                <p class="paragraph-text-job job-place">Product Designer</p>
 
                 <ul class="list social-list">
                   <li class="social-list-item">
@@ -251,8 +303,8 @@
                 height="260"
               />
               <div class="card-description">
-                <h3 class="head-text team-name">Tom Ford</h3>
-                <p class="paragraph-text job-place">Frontend Developer</p>
+                <h3 class="head-text-taem team-name">Tom Ford</h3>
+                <p class="paragraph-text-job job-place">Frontend Developer</p>
 
                 <ul class="list social-list">
                   <li class="social-list-item">
@@ -314,8 +366,8 @@
                 height="260"
               />
               <div class="card-description">
-                <h3 class="head-text team-name">Camila Garcia</h3>
-                <p class="paragraph-text job-place">Marketing</p>
+                <h3 class="head-text-taem team-name">Camila Garcia</h3>
+                <p class="paragraph-text-job job-place">Marketing</p>
 
                 <ul class="list social-list">
                   <li class="social-list-item">
@@ -377,8 +429,8 @@
                 height="260"
               />
               <div class="card-description">
-                <h3 class="head-text team-name">Daniel Wilson</h3>
-                <p class="paragraph-text job-place">UI Designer</p>
+                <h3 class="head-text-taem team-name">Daniel Wilson</h3>
+                <p class="paragraph-text-job job-place">UI Designer</p>
 
                 <ul class="list social-list">
                   <li class="social-list-item">
@@ -728,6 +780,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
