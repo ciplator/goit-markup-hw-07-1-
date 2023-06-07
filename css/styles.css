@@ -52,23 +52,40 @@ body {
 width: 100%;
    padding-left: 16px;
   padding-right: 16px;
-  margin-left: auto;
-    margin-right: auto;
+
   
 }
 @media screen and (min-width: 428px) {
   .container {
     width: 428px;
-    margin-left: auto;
-    margin-right: auto;
+  
   }
+
 }
 
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 720px;
+    width: 768px;
+margin: 0 auto;
   }
+.hero {
+  background-image: 
+    url(../images/Mobile/);
+}
+
+.our-features-position{
+      display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+}
+.information-item{
+  width: calc((100% - 24px) / 2);
+}
+.head-text{
+  text-align: left;
+}
 }
 
 @media screen and (min-width: 1200px) {
@@ -79,18 +96,26 @@ width: 100%;
 .nav-menu{
   display: none;
 }
+
 .mobile-header{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
-  margin-bottom: 22px;
+  padding-bottom: 22px;
 }
 .mobile-menu-open-btn{
   border: none;
   background-color: transparent;
   padding: 0;
   line-height: 0; 
+}
+.menu-list{
+  display: flex;
+      flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
 }
 .logo-web {
   text-transform: uppercase;
@@ -181,17 +206,11 @@ color: teal;
   color: tomato;
 }
 .hero {
-  width: 428px;
-  height: 432px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/Mobile/Dark-bg.jpg);
+    url(../images/tablet/Dark-bg.jpg);
   background-color: rgba(46, 47, 66, 0.7);
   
 
