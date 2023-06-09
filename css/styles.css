@@ -52,6 +52,7 @@ body {
 width: 100%;
    padding-left: 16px;
   padding-right: 16px;
+  margin: 0 auto;
 
   
 }
@@ -64,29 +65,7 @@ width: 100%;
 }
 
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-margin: 0 auto;
-  }
-.hero {
-  background-image: 
-    url(../images/Mobile/);
-}
 
-.our-features-position{
-      display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 72px;
-}
-.information-item{
-  width: calc((100% - 24px) / 2);
-}
-.head-text{
-  text-align: left;
-}
-}
 
 @media screen and (min-width: 1200px) {
   .container {
@@ -206,6 +185,11 @@ color: teal;
   color: tomato;
 }
 .hero {
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -245,7 +229,7 @@ color: teal;
 }
 .hero-text-position {
   max-width: 320px;
-  margin: auto;
+  margin: 0 auto;
 }
 .hero-button-position {
   min-width: 169px;
@@ -547,6 +531,45 @@ text-align: center;
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus {
   background-color: #404bbf;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+.hero {
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/tablet/Dark-bg.jpg);
+     max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+}
+
+.our-features-position{
+      display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+}
+.information-item{
+  width: calc((100% - 24px) / 2);
+}
+.head-text{
+  text-align: left;
+}
 }
 /* @media screen and (min-width: 768px) {
   .container {
@@ -862,7 +885,15 @@ overlay
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people_office.jpg);
-  background-color: rgba(46, 47, 66, 0.7);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
 }
 .hero-button:hover,
 .hero-button:focus {
